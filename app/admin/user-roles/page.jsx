@@ -26,7 +26,7 @@ export default async function AdminUserRolesPage() {
             <table className="min-w-full border-collapse">
               <thead>
                 <tr className="bg-gray-100 text-left text-sm font-semibold text-gray-700">
-                  <th className="border px-4 py-4">User ID</th>
+                  {/*<th className="border px-4 py-4">User ID</th>*/}
                   <th className="border px-4 py-4">Username</th>
                   <th className="border px-4 py-4">Name</th>
                   <th className="border px-4 py-4">Email</th>
@@ -40,7 +40,7 @@ export default async function AdminUserRolesPage() {
 
                   return (
                     <tr key={id} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="border px-4 py-5">{f.userId}</td>
+                      {/*<td className="border px-4 py-5">{f.userId}</td>*/}
                       <td className="border px-4 py-5">{f.userName}</td>
                       <td className="border px-4 py-5">
                         {f.firstName} {f.lastName}
