@@ -47,7 +47,7 @@ export default function NavBar() {
         {/* Logo */}
         <Link href="/" className="flex items-center h-full mr-16">
           <img
-            src="/assets/Lupa.svg"
+            src="/assets/LUPA.svg"
             alt="Lupa Ventures Logo"
             className="h-[100px] w-auto"
           />
@@ -56,21 +56,21 @@ export default function NavBar() {
         {/* Desktop Navigation (Admin Only) */}
         {role === "admin" && (
           <div className="hidden md:flex flex-wrap items-center space-x-4 md:space-x-6 text-yellow-300">
-            <Link href="/" className="flex items-center hover:text-white transition">
+            <Link href="/" title = "Go to Homepage" className="flex items-center hover:text-white transition">
               <Home size={20} className="mr-2" /> Home
             </Link>
 
             <Link
-              href="/dashboard" // Change to /admin/receipts if needed
+              href="/dashboard" title = "Receipt Entry and Updates" // Change to /admin/receipts if needed
               className="flex items-center hover:text-white transition"
             >
               <LayoutList size={20} className="mr-2" />
               Receipt Maintenance
             </Link>
-            <Link href="/dashboard/transactions/export" className="flex items-center hover:text-white transition">
+            <Link href="/dashboard/transactions/export" title = "Export as CSV or Excel" className="flex items-center hover:text-white transition">
               <DownloadIcon size={20} className="mr-2" /> Report Export
             </Link>
-            <Link href="/admin/user-roles" className="flex items-center hover:text-white transition">
+            <Link href="/admin/user-roles" title="Manage User Roles and Permissions" className="flex items-center hover:text-white transition">
               <Users size={20} className="mr-2" /> User Role Maintenance
             </Link>
           </div>
@@ -80,16 +80,16 @@ export default function NavBar() {
         <div className="hidden md:flex items-center space-x-6">
           {!userId ? (
             <>
-              <Link href="/sign-in" className="flex items-center hover:text-white transition">
+              <Link href="/sign-in" title="Sign in to your account" className="flex items-center hover:text-white transition">
                 <LogIn size={20} className="mr-2" /> Sign in
               </Link>
-              <Link href="/sign-up" className="flex items-center hover:text-white transition">
+              <Link href="/sign-up" title="Create a new account" className="flex items-center hover:text-white transition">
                 <UserPlus size={20} className="mr-2" /> Sign up
               </Link>
             </>
           ) : (
             <>
-              <Link href="/profile" className="flex items-center hover:text-white transition">
+              <Link href="/profile" title="View your profile" className="flex items-center hover:text-white transition">
                 <User size={20} className="mr-2" /> Profile
               </Link>
               <button
