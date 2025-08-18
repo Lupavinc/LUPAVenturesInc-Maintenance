@@ -47,7 +47,7 @@ export default function NavBar() {
         {/* Logo */}
         <Link href="/" className="flex items-center h-full mr-16">
           <img
-            src="/assets/LUPA.svg"
+            src="/assets/Lupa.svg"
             alt="Lupa Ventures Logo"
             className="h-[100px] w-auto"
           />
