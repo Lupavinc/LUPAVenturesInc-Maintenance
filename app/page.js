@@ -54,7 +54,7 @@ export default function Home() {
         </h1>
 
           
-          <div className="w-16 h-1 bg-yellow-400 my-4 mx-auto sm:mx-0"></div>
+          //<div className="w-16 h-1 bg-yellow-400 my-4 mx-auto sm:mx-0"></div>
 
           {/* Tagline paragraph removed */}
 
@@ -62,7 +62,7 @@ export default function Home() {
           //  text="Browse Listings"
           //  onClick={handleButtonClick}
           ///>
-        </div>
+        //</div>
       </section>
     </div>
   );
