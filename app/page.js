@@ -53,7 +53,6 @@ export default function Home() {
           <span className="text-yellow-400 no-underline">Here</span>
         </h1>
 
-          
           <div className="w-16 h-1 bg-yellow-400 my-4 mx-auto sm:mx-0"></div>
 
         </div>
