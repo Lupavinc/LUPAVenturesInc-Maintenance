@@ -58,10 +58,10 @@ export default function Home() {
 
           {/* Tagline paragraph removed */}
 
-          <Button
-            text="Browse Listings"
-            onClick={handleButtonClick}
-          />
+          //<Button
+          //  text="Browse Listings"
+          //  onClick={handleButtonClick}
+          ///>
         </div>
       </section>
     </div>
